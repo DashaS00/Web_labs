@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 16px
+}
+
+body{
+    background-color: white;
+    color: purple;
+    justify-content: center;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+.horizontalmenu {
+    padding: 30px;
+}
+
+.horizontalmenu li{
+    display: inline;
+    padding: 30px;
+}
+
+.verticmenu{
+    padding: 30px;
+}
+
+.verticmenu li{
+
+color: purple;
+}
+
+.header{
+   min-height: 35px;
+   display: flex;
+   flex-direction: row;
+   background-color: Thistle;
+   justify-content: center;
+}
+
+.level ul ul  {
+  position: relative;
+  display: none;
+  }
+
+.level li:hover ul  {
+    display: block;
+  }
+
+.share {
+    weight: 0px;
+    margin: 10px;
+    padding: 0px;
+}
+
