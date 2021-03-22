@@ -1,0 +1,49 @@
+.col-xs-1, .col-sm-3, .col-md-6, .col-lg-12 {
+  position: relative;
+  float: left;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+  margin: 2em;
+  display: flex;
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+  color: white;
+  background-image: url(img.jpg);
+  background-position: 45% 55%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.item p{
+  padding: 40px;
+}
+
+.justify{
+  justify-content:space-around;
+}
+
+.center{
+  justify-content: center;
+}
+
+.direction{
+  flex-direction: column;
+}
+
+.reverse{
+  flex-direction: column-reverse;
+}
