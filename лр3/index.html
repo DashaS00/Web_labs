@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Стефанова Дарья, 191-361, лр3</title>
 </head>
 <body>
@@ -86,10 +87,18 @@
         <p style="text-align: center;"><img  style="text-align: center" src="img8.gif" width="550" height="200"></p>
     </div>
 
+    
+<div class="container"><div id="app-1">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Нажмите, чтобы перевернуть сообщение</button>
+    </div></div>
+    <script src="reverse.js"></script>   
+
     <div class="shake-slow">	
 	<br><br><p style="text-align: center;"><a href="https://github.com/DashaS00/Web_labs"><big>GitHub</a></p>
     </div>
 
+    
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
