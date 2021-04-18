@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Стефанова Дарья 191-361 лр6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="space">
+  <img src="planet.png" class="planet" >
+  <div class="dark">
+    <img src="planet.png" class="planet" >
+  </div>
+</div>
+<div class="down_space">
+    <p class="text">Анимационный ролик КОСМОС</p>
+  <div class="startAnim">
+    <p align="center">*Наведи курсор*</p>
+  </div>
+</div>
+<script>
+$(".startAnim").mouseenter(() => {
+	$("body").addClass("run");
+});
+
+$(".startAnim").mouseleave(() => {
+	$("body").removeClass("run");
+});
+</script>
+</body>
+</html>
