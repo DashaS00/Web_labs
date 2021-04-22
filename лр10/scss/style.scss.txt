@@ -1,0 +1,77 @@
+@use "_сolors.scss" as c;
+@import "_body-style.scss";
+@import "_header-styles";
+
+$fs-large:32px;
+$fs-small:20px;
+$font-weights: ("light":100, "regular": 400, "bold": 700, "boldest": 900);
+
+%myborder {
+    border: 1px dashed c.$primary-color;
+}
+
+@mixin fc($fcolor) {
+    color: $fcolor;
+    border: 1px solid $fcolor;
+}
+
+.title1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: $fs-large;
+    font-weight: bold;
+}
+
+.blockTempPad {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block1 {
+    @include fc(purple);
+    &>p {
+        font-size: $fs-small+3*2;
+    }
+    .block1-1 {
+        @include fc(blue);
+        & p {
+            @extend %myborder;
+        }
+        &+a {
+            margin-left: 40px;
+            color: green;
+        }
+        a {
+            color: c.$secondary-color;
+            text-decoration: underline;
+            &:hover {
+                color: black;
+                font-size: $fs-large+4px;
+            }
+        }
+    }
+}
+
+p {
+    margin-left: 40px;
+}
+
+.block2 {
+    @include fc(adjust-hue(teal, 60deg));
+    .p1 {
+        font-weight: map-get($font-weights, $key: "light");
+    }
+    .p2 {
+        font-weight: map-get($font-weights, $key: "regular");
+    }
+    .p3 {
+        font-weight: map-get($font-weights, $key: "bold");
+    }
+    .p4 {
+        font-weight: map-get($font-weights, $key: "boldest");
+    }
+}
