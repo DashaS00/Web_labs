@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+.header {
+    width: 100%;
+    height: max-content;
+    background-color: #161616;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header>* {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.headText {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: 30px
+}
+
+.headText {
+    width: 200%;
+}
+
+.logo {
+    width: max-content;
+    border: white 1px solid;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-right: 60px;
+    padding: 7px 22px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+
+.menu-item {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.headOrder {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.headBuy {
+    background-color: #FFE500;
+    color: #161616;
+    padding: 10px 35px;
+    font-size: 16px;
+    margin-top: 40px;
+    border: none;
+}
+
+.headOrder_TextButtonPicture {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    margin-top: 5%;
+    align-items: flex-start;
+}
+
+.wagons {
+    width: 57%;
+    position: absolute;
+    right: -80px;
+
+}
+
+.headArrows {
+    text-align: center;
+    margin-top: 7%;
+    width: 30%;
+    right: 100px;
+    position: relative;
+}
+
+.whatWeCanDo {
+    background-color: #F1F2F5;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.whatWeCanDoColumns {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 80%;
+}
+
+.whatWeCanDoRows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1em;
+    margin-bottom: 30px;
+}
+
+.whatWeCanDoItem {
+    background-color: #FFFFFF;
+    width: min-content;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.5s linear;
+    page-break-inside: avoid;
+}
+
+.whatWeCanDoPicture {
+    width: auto;
+}
+
+.whatWeCanDoItem:hover {
+    transform: translateY(-30px);
+}
+
+.whatWeCanDoSign {
+    margin: 30px;
+    width: 80%;
+    color: #161616;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.whatWeCanDoMap-icon {
+    width: 30px;
+    padding: 10px;
+    background-color: #FFE500;
+    position: absolute;
+}
+
+.ourAdvantages {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.ourAdvantagesAdvantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2%;
+    grid-row-end: auto;
+    justify-content: space-around;
+}
+
+.ourAdvantagesElement {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    width: max-content;
+    max-width: 350px;
+    padding-bottom: 30px;
+}
+
+.ourAdvantagesYellow-block {
+    background-color: #FFE500;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.ourAdvantagesNum {
+    position: relative;
+    z-index: 1;
+    font-size: 80px;
+    color: #000000;
+    opacity: 0.03;
+    bottom: 50%;
+    right: 55%;
+}
+
+.ourAdvantagesDescription {
+    padding-left: 40px;
+}
+
+.map {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.mapPicture {
+    width: 100%;
+}
+
+.land_lease {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.land_leaseMobilePicture {
+    display: none;
+}
+
+.land_leaseText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 0%;
+}
+
+.textDescription {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.textHead {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.consultation {
+    background-color: #161616;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.land_leasePicture {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 115px;
+}
+
+.land_leaseGrey-rectangle {
+    position: absolute;
+    bottom: 90px;
+    right: 110px;
+    z-index: 1;
+}
+
+.land_leaseLand {
+    position: relative;
+    z-index: 2;
+}
+
+.skladRentText {
+    width: 100%;
+    font-size: 12px;
+
+}
+
+.textHeadWhite,
+.textDescriptionWhite {
+    color: white;
+}
+
+.skladRent {
+    background-color: #161616;
+    display: flex;
+    height: max-content;
+    padding-bottom: 50px;
+    margin-top: 60px;
+}
+
+.skladRentMobilePicture {
+    display: none;
+}
+
+.skladRentContent {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+
+.consultationWhite-border {
+    border: white 1px solid;
+}
+
+.skladRentPicture {
+    position: relative;
+    top: 100px;
+    width: 650px;
+    height: 480px;
+
+}
+
+.send-contacts {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.send-contactsForm {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-contactsField {
+    background-color: #EFF0F1;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    width: 125%;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #161616;
+    color: white;
+}
+
+.footerContent {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 8px;
+}
+
+
+.mobile-opened-menu {
+    background-color: #161616;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    font-size: 2em;
+    color: #FFFFFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_opened {
+    margin-top: 10%;
+    height: 60%;
+    gap: 3rem;
+}
+
+.mobile-opened-menu__exit {
+    float: right;
+}
+
+.send-contactsForm__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    width: 95%;
+    text-align: center;
+}
+:focus {
+    outline-width: 8px;
+    outline-color: yellowgreen;
+    font-weight: bold;
+}
+
+.headMobile-menu {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .footer__content {
+        width: 80%;
+    }
+
+    .header>* {
+        width: 80%;
+    }
+
+    .send-contactsForm {
+        width: 100%;
+    }
+
+    .whatWeCanDoColumns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .whatWeCanDoRows {
+        flex-direction: column;
+    }
+
+    .ourAdvantagesNum {
+        display: none;
+    }
+
+    .footer__content {
+        width: 90%;
+    }
+
+    .header {
+        background-image: linear-gradient(rgba(63, 63, 63, 0.8), rgba(0, 0, 0, 0.5)), url(img/train.png);
+        background-position: 50% 40%;
+        background-repeat: no-repeat;
+    }
+
+    .headerHead {
+        width: 95%;
+    }
+
+    .headOrder {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .wagons {
+        display: none;
+    }
+
+    .skladRentPicture {
+        display: none;
+    }
+
+    .land_leasePictures {
+        display: none;
+    }
+
+    .skladRentText {
+        width: 95%;
+    }
+
+    .send-contactsForm {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .consultation,
+    .send-contactsField {
+        width: 95%;
+    }
+
+    .menu-itemHeader, .address, .menu-itemPhone {
+        display: none;
+    }
+
+    .headArrows {
+        text-align: end;
+        right: 0;
+    }
+
+    .title {
+        padding-top: 10%;
+    }
+
+    .land_lease,
+    .land_leaseText {
+        width: 95%;
+        padding-right: 0;
+    }
+
+    .land_leaseForm {
+        width: 70%;
+    }
+
+    .menu_mobile-v {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .land_lease,
+    .skladRent {
+        flex-direction: column;
+    }
+
+    .land_leaseText,
+    .skladRentContent {
+        align-items: center;
+        text-align: center;
+    }
+
+    .land_leaseMobilePicture {
+        display: block;
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .skladRentMobilePicture {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.5em;
+    }
+
+    .headMobile-menu {
+        display: block;
+    }
+}
+
+@media print {
+    @page {
+        margin: 2cm, 1cm, 2cm, 3cm;
+    }
+
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .map {
+        break-inside: avoid;
+    }
+
+    .whatWeCanDo {
+        text-align: center;
+    }
+
+    .whatWeCanDoItem {
+        break-inside: avoid;
+        margin: 0 auto;
+        text-align: center;
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        display: block;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .whatWeCanDoPicture {
+        width: 70%;
+        border: #000 2px solid;
+    }
+
+    .whatWeCanDoRows,
+    .whatWeCanDoColumns {
+        display: block;
+    }
+
+    .whatWeCanDoSign {
+        margin: 0 auto;
+    }
+
+    .ourAdvantagesElement {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .skladRentMobilePicture,
+    .land_leaseMobilePicture {
+        max-width: 52%;
+        border: #000 2px solid;
+    }
+
+    .ourAdvantages {
+        page-break-before: always;
+    }
+
+    .header__form,
+    .send-contacts,
+    .footer,
+    .consultation,
+    .whatWeCanDoMap-icon {
+        display: none;
+    }
+}
