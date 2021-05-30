@@ -1,0 +1,141 @@
+.d-all {
+	background-color: #494949;
+	transition: .5s;
+}
+
+.d-headTitle {
+	color: #A9A9A9;
+	transition: .5s;
+}
+
+.d-themeLabel {
+	color: #A9A9A9;
+	transition: .5s;
+}
+
+.themeMode .active {
+	transform: translateX(calc(100% + 4px));
+	transition: .5s;
+	background-color: #515e6e;
+}
+
+.d-themeMode {
+	background: #D3D3D3;
+	color: #D3D3D3;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.d-box {
+	border: 2px solid #D3D3D3;
+	color: #D3D3D3;
+	transition: .5s;
+}
+
+.d-addLabel {
+	color: 	#D3D3D3;
+	transition: .5s;
+}
+
+.d-addInput {
+	border: 2px solid #D3D3D3;
+	color: #D3D3D3;
+	transition: .5s;
+	background: #808080;
+}
+
+.d-addInput:focus {
+	border-color: #f0f0f0;
+	color: black;
+}
+
+.d-addInput:disabled {
+	background: #696969;
+	border: 2px solid #808080;
+	color: #f0f0f0ab;
+}
+
+.d-addInput::placeholder {
+	color: #f0f0f0;
+}
+
+.d-addBu {
+	background: #393939;
+	transition: .5s;
+}
+
+.d-addButton-on,
+.d-addButton-off {
+	border: 2px solid #f0f0f0;
+	background: #393939;
+	transition: .5s;
+}
+
+.d-addButton-on:hover span,
+.d-addButton-on:hover span::after,
+.d-addButton-off:hover span,
+.d-addButton-off:hover span::after {
+	background: #000000;
+}
+
+.addButton-on:hover,
+.addButton-off:hover {
+	background: #fff;
+	border: 2px solid  #000000;
+	transition: .5s;
+}
+
+.d-modal {
+	background: #49494995;
+	transition: .5s;
+}
+
+.d-modalForm {
+	background: #696969;
+	transition: .5s;
+}
+
+.d-modalInput {
+	color: 	#D3D3D3;
+	transition: .5s;
+}
+
+.d-modalInput select {
+	background-image: url(../img/plus.svg);
+        color: #f0f0f0;
+}
+
+.d-task {
+	background: #696969;
+	transition: .5s;
+}
+
+.d-taskTitle {
+	color: #D3D3D3;
+	transition: .5s;
+}
+
+.d-taskDesc {
+	color: #BA55D3;
+	transition: .5s;
+}
+
+.d-settings,
+.d-done,
+.d-delete {
+	transition: .5s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
